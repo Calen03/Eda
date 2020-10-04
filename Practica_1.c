@@ -12,7 +12,7 @@ Casique Corona Luis Enrique
 
 int main(){
     int edo=3,mm=3,aa=2;
-    int esMax;
+    int esMax,moMax;
     float sumE,aMax;
     float temp[edo][mm][aa];
     char year[5][5] = {"2005","2010"};
@@ -43,6 +43,7 @@ int main(){
                     if (temp[j][k][i]>aMax){
                         aMax=temp[j][k][i];
                         esMax=j;
+                        moMax=k;
                     }
                 }
                 sumE/=edo;
@@ -50,7 +51,7 @@ int main(){
                 sumE=0;
                 printf("\n");
             }
-            printf("La temperatura más alta registrada del año %s fue del estado de %s con una maxima de %.2f\n\n", year[i],estados[esMax], aMax );
+            printf("La temperatura más alta registrada del año %s fue del estado de %s en el mes de %s con una maxima de %.2f\n\n", year[i],estados[esMax],mes[moMax], aMax );
         }
     system("pause");
     return 0;
