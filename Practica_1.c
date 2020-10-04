@@ -8,6 +8,7 @@ Casique Corona Luis Enrique
 */
 
 #include<stdio.h>
+#include<stdlib.h>
 
 int main(){
     int edo=3,mm=3,aa=2;
